@@ -35,6 +35,18 @@ img {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
 
 /* ------------------heder-------------------- */
@@ -161,19 +173,7 @@ img {
 .feature {
     padding: 120px 0;
 }
-.feature-title {    
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-    margin-bottom: 8px;
-}
+.feature-title {}
 
 
 .feature-list {
@@ -191,6 +191,7 @@ img {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .feature-item-text {
@@ -316,12 +317,13 @@ img {
 
 .footer-logo .futer-logo-studio{
     color: #f4f4fd;
-   display: inline-block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
 .futer-logo-studio {
     display: inline-block;
+    margin-bottom: 16px;
 }
 
 .footer-item-text {
