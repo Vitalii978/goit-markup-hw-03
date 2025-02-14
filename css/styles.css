@@ -4,15 +4,55 @@ body {
     background-color: #fff;
 }
 
+/* reset */
+
 ul, ol {
     list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+h1, h2, h3, h4,h5, h6, p {
+    margin: 0;
 }
 
 a {
     text-decoration: none;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* common */
+
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
 /* ------------------heder-------------------- */
+
+.header-page{
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.heder-container {
+    display: flex;
+    align-items: center ;
+}
+
+.nav-header {
+    display: flex;
+    align-items: center;
+}
+
 .logo {
     font-family: "Raleway", sans-serif;
     font-weight: 700;
@@ -23,11 +63,25 @@ a {
     color: #4d5ae5;
 }
 
+.header-logo {
+    margin: 24px 0;
+    padding-right: 76px;
+}
+
 .header-logo .logo-studio {
     color: #2e2f42;
 }
 
-.nav-link {    
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 40px
+    ;
+}
+
+.nav-link { 
+    display: block; 
+    padding: 24px 0;  
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -43,10 +97,19 @@ a {
 }
 
 .contacts {
+    margin-left: auto;
     font-style: normal;
 }
 
+.contacts-list {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
 .contacts-link {
+    display: block;
+    padding: 24px 0;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -56,19 +119,26 @@ a {
 /* --------------------------Hero------------------ */
 
 .hero {
-    background: #2e2f42;    
+    background: #2e2f42;  
+    padding: 188px 0; 
 }
 
 .hero-title {
+    max-width: 496px;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin: 0 auto;
+    margin-bottom: 48px;
 } 
 
 .hero-btn {
+    border-radius: 4px;
+    min-width: 169px;
+    padding: 16px 0;
     font-family: "Roboto", sans-serif;        
     font-weight: 500;
     font-size: 16px;
@@ -77,6 +147,9 @@ a {
     color: #fff;
     background: #4d5ae5; 
     cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border: 0;
 }
 
 .hero-btn:hover,
@@ -86,11 +159,29 @@ a {
 
 /* ---------------------feature---------------------- */
 
-.feature-title {}
+.feature-title {    
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
 
-.feature-list {}
 
-.feature-item {}
+.feature-list {
+    display: flex;
+    gap: 24px;
+    margin: 120px 0;
+}
+
+.feature-item {
+    width: calc((100% - 24px*3)/4);
+}
 
 .feature-subtitle {
     font-weight: 500;
@@ -105,6 +196,7 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
+    margin-top: 8px;
 }
 
 /* --------------------Team---------------------*/
@@ -112,6 +204,7 @@ a {
 .team {
     background: #f4f4fd;
     text-transform: capitalize;
+    padding: 120px 0;
 }
 
 .team-title {
@@ -121,15 +214,25 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 72px;
 }
 
-.team-list {}
+.team-list {
+    display: flex;
+    gap: 24px;
+}
 
 .team-item {
     background: #ffffff;
+    border-radius: 0 0 4px 4px;
+    width: calc((100% - 24px*3)/4);
 }
 
 .team-img {}
+
+.team-block-text {
+    padding: 32px 16px;
+}
 
 .team-subtitle {
     font-weight: 500;
@@ -138,6 +241,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .team-item-text {
@@ -151,7 +255,8 @@ a {
 /* ----------------------Our Portfolio------------------ */
 
 .portfolio {
-    text-transform: capitalize
+    text-transform: capitalize;
+    padding: 120px 0;
 }
 
 .portfolio-title {
@@ -163,11 +268,25 @@ a {
     color: #2e2f42;
 }
 
-.portfolio-list {}
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 48px 24px;
 
-.portfolio-item {}
+}
+
+.portfolio-item {
+    width: calc((100% - 24px*2)/3);
+}
 
 .portfolio-img {}
+
+.portfolio-block-text {
+    padding: 32px 16px;
+    border-bottom: 1px solid #e7e9fc;
+    border-left: 1px solid #e7e9fc;
+    border-right: 1px solid #e7e9fc;
+}
 
 .portfolio-subtitle {
     font-weight: 500;
@@ -175,6 +294,7 @@ a {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .portfolio-item-text {
@@ -188,15 +308,20 @@ a {
 
 .footer-page {
     background: #2e2f42;
+    padding: 100px 0;
+
 }
 
 .footer-logo .futer-logo-studio{
     color: #f4f4fd;
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .futer-logo-studio {}
 
 .footer-item-text {
+    max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
