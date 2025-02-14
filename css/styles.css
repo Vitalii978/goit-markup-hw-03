@@ -317,13 +317,11 @@ img {
 
 .footer-logo .futer-logo-studio{
     color: #f4f4fd;
-    display: inline-block;
-    margin-bottom: 16px;
 }
 
-.futer-logo-studio {
-    display: inline-block;
-    margin-bottom: 16px;
+.footer-logo {
+display: inline-block;
+margin-bottom: 16px;
 }
 
 .footer-item-text {
