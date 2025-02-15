@@ -4,7 +4,7 @@ body {
     background-color: #fff;
 }
 
-/* reset */
+/*reset */
 
 ul, ol {
     list-style-type: none;
@@ -49,7 +49,7 @@ img {
 }
 
 
-/* ------------------heder-------------------- */
+/* #region-heder -------------------- */
 
 .header-page{
     border-bottom: 1px solid #e7e9fc;
@@ -127,8 +127,9 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+/* #endregion-heder ----------- */
 
-/* --------------------------Hero------------------ */
+/* #region-hero ------------------ */
 
 .hero {
     background: #2e2f42;  
@@ -168,8 +169,9 @@ img {
 .hero-btn:focus {
     background: #404bbf;
 }
+/* #endregion-hero-------------------- */
 
-/* ---------------------feature---------------------- */
+/* #region-feature ---------------------- */
 .feature {
     padding: 120px 0;
 }
@@ -201,7 +203,10 @@ img {
     color: #434455;
 }
 
-/* --------------------Team---------------------*/
+/* #endregion-feature ----------------- */
+
+
+/* #region-team ---------------------*/
 
 .team {
     background: #f4f4fd;
@@ -254,7 +259,9 @@ img {
     color: #434455;
 }
 
-/* ----------------------Our Portfolio------------------ */
+/* #endregion-team ---------------- */
+
+/* #region-our-portfolio------------------ */
 
 .portfolio {
     text-transform: capitalize;
@@ -306,8 +313,10 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
+/* #endregion-our-portfolio--------- */
 
-/* --------------------footer---------------------- */
+
+/* #region-footer---------------------- */
 
 .footer-page {
     background: #2e2f42;
@@ -331,3 +340,5 @@ margin-bottom: 16px;
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
+
+/* #endregion-footer-------------------- */
